@@ -1,0 +1,22 @@
+[project]
+name = "budget_knowledge"
+version = "0.1.0"
+description = "budget_knowledge using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.100.0,<1.0.0",
+    "google-generativeai>=0.8.4",
+    "pypdf2>=3.0.1",
+]
+
+[project.scripts]
+kickoff = "budget_knowledge.main:kickoff"
+plot = "budget_knowledge.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
