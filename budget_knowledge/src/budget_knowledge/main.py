@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import sys
+import warnings
 from random import randint
 
 from crewai.flow.flow import Flow, listen, start
@@ -10,6 +12,8 @@ from .crews.budget_or_internet_check_crew.budget_or_internet_crew import (
 )
 from .crews.budget_response_crew.budget_crew import UnionBudgetCrew
 from .crews.internet_response_crew.internet_crew import InternetCrew
+
+warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
 
 class UnionBudgetState(BaseModel):

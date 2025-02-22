@@ -13,6 +13,7 @@ dependencies = [
 [project.scripts]
 kickoff = "budget_knowledge.main:kickoff"
 plot = "budget_knowledge.main:plot"
+pdfSearch = "budget_knowledge.pdfSearch:kickoff"
 
 [build-system]
 requires = ["hatchling"]
