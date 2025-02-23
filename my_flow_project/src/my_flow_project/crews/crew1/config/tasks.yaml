@@ -1,0 +1,13 @@
+research_agent_task:
+  description: >
+    Answer the customer's questions based on the home inspection PDF.
+    The research agent will search through the PDF to find the relevant answers.
+    Your final answer MUST be clear and accurate, based on the content of the home
+    inspection PDF.
+
+    Here is the customer's question:
+    {customer_question}
+  expected_output: >
+    Provide clear and accurate answers to the customer's questions based on 
+    the content of the home inspection PDF.
+  agent: researcherPDF

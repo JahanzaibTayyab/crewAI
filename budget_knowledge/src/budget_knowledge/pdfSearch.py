@@ -87,8 +87,7 @@ write_email_task = Task(
         
         Best regards,
 
-        Brandon Hancock,
-        Hancock Realty
+        Jahanzaib Tayyab,
         """
     ),
     expected_output="""
