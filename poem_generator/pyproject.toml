@@ -1,0 +1,20 @@
+[project]
+name = "poem_generator"
+version = "0.1.0"
+description = "poem_generator using crewAI"
+authors = [{ name = "Jahanzaib Tayyab", email = "jtayyab204@gmail.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0",
+]
+
+[project.scripts]
+kickoff = "poemflow.main:kickoff"
+plot = "poemflow.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
