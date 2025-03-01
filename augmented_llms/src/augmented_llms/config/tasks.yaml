@@ -1,0 +1,8 @@
+chat_task:
+  description: >
+    Answer the user's question in a clear and concise manner.
+    If recent data is needed, use real-time web search; otherwise, rely on internal LLM knowledge. Here is the query : {query}.
+  expected_output: >
+    A conversational response that answers the user's question
+    clearly and keeps the interaction friendly and engaging.
+  agent: chatbot
